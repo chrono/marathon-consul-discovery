@@ -11,7 +11,7 @@ import (
 )
 
 var consul_marathon_id_prefix = "marathon:"
-var consul_marathon_name_prefix = "marathon-"
+var consul_marathon_name_prefix = ""
 var dns_invalid_hostname, _ = regexp.Compile(`[^a-zA-Z0-9\-]`)
 var dns_invalid_hostname_prefix, _ = regexp.Compile(`^[^a-zA-Z0-9\-]`)
 
