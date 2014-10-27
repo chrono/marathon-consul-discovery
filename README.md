@@ -59,3 +59,4 @@ Known issues
  * The callback is never unregistered with marathon when our process ends.
  * We get callbacks for all the tasks running everywhere on every instance of this service performance? scaling?
  * Service definitions, once registered in consul will not be unregistered / updated when this service restarts with different configuration
+ * error handling. lots of fatal quits all over the place.
