@@ -102,7 +102,7 @@ func PollMarathonTasks(my_marathon marathon.Marathon, agent *consulapi.Agent, ho
 		task_list := my_marathon.TaskList().Tasks
 		my_task_map := make(map[string]*marathon.MarathonTask, 100)
 		for _, task := range task_list {
-			if hostname == task.Host && task.Ports != nil {
+			if hostname == task.Host && len(task.Ports) > 0 {
 				task_copy := task
 				my_task_map[task.Id] = &task_copy
 			}
